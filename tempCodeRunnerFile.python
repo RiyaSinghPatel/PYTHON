@@ -1,0 +1,8 @@
+# Create a variable called for and assign it a value 4. See what happens and find out the reason behind the behavior that you see**.**
+# Store the principal amount, rate of interest, and time in different variables and then calculate the Simple Interest for 3 years**.**
+
+P=1000
+IR=25
+T=5
+SI =P*IR*T/100
+print(SI)

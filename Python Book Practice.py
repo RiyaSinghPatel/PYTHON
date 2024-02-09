@@ -186,3 +186,74 @@ else:
 
 
 #***************************************BASIC - STRING question***********************************
+# 020 Ask the user to enter their first name and then display the length of their name
+    
+name = input("Please enter the name: ")
+print(len(name))
+
+# 021 Ask the user to enter their first name and then ask them to enter their surname. Join them together with a space between 
+# and display the name and the length of whole name. 
+
+fname = input("Please enter the first name: ")
+lname = input("Please enter the last name: ")
+Full_name= fname + lname
+print(f"your {fname} {lname} is of length {len(Full_name)}")
+
+# 022 Ask the user to enter their first name and surname in lower case. Change the case to title case and join them together. 
+# Display the finished result.
+
+fname = input("Please enter the first name: ")
+lname = input("Please enter the last name: ")
+f = fname.title()
+L =lname.title()
+print(f"you name is {f} {L}")
+
+# 23 Ask the user to type in the first line of a nursery rhyme and display the length of the string. Ask for a starting number and an 
+# ending number and then display just that section of the text (remember Python starts counting from 0 and not 1). 
+
+poem = input("Please enter your poem: ")
+print("length of this poem is: ", len(poem))
+s1 = int(input("Please enter starting number: "))
+e1 = int(input("Please enter end number: "))
+print(f"hello world {poem[s1:e1]}")
+
+# 024 Ask the user to type in any word and display it in upper case
+
+poem = input("Please enter your poem: ")
+print(f"Pleasee convert all in capital: {poem.upper()}")
+
+
+# 025 Ask the user to enter their first name. If the length of their first name is under five characters, ask 
+# them to enter their surname and join them together (without a space) and display the name 
+# in upper case. If the length of the first name is five or more characters, display their first name in lower case. 
+
+name = input("Please enter your name: ")
+len_name=len(name)
+if len_name < 5:
+     sur_name=input("enter you last name:")
+     join=name+sur_name
+     print("your name is:", join.upper())
+else:
+     print("your first name is:", name.lower())
+
+
+# 26 Pig Latin takes the first consonant of a word, moves it to the end of the word and adds on an “ay”. If a word begins 
+# with a vowel you just add “way” to the end. For example, pig becomes igpay, banana becomes ananabay, and aadvark becomes 
+# aadvarkway. Create a program that will ask the user to enter a word and change it into Pig Latin. Make sure the 
+# new word is displayed in lower case. 
+word = input("Please enter your name: ")
+first =word[0]
+rest = word[1:len(word)]
+print(f"you word is:{rest}")
+if first in {"a","e","i","o","u"}:
+     w=rest + first + "way"
+     print(w.lower())
+else: 
+     w1=rest+ first + "ay"
+     print(w1.lower())
+
+
+
+
+
+
