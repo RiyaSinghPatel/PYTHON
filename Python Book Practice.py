@@ -242,18 +242,32 @@ else:
 # aadvarkway. Create a program that will ask the user to enter a word and change it into Pig Latin. Make sure the 
 # new word is displayed in lower case. 
 word = input("Please enter your name: ")
-first =word[0]
+first = word[0]
 rest = word[1:len(word)]
-print(f"you word is:{rest}")
-if first in {"a","e","i","o","u"}:
-     w=rest + first + "way"
-     print(w.lower())
-else: 
-     w1=rest+ first + "ay"
-     print(w1.lower())
+print(f"Your word is: {rest}")
+if first in {"a", "e", "i", "o", "u"}:
+    w = rest + first + "way"
+    print(w.lower())
+else:
+    w1 = rest + first + "ay"
+    print(w1.lower())
+
+#Write a function to reverse a string in same line
+original_string = input("Enter the string: ")
+reversed_string = ''.join([original_string[i] for i in range(len(original_string) - 1, -1, -1)])
+print(reversed_string)
 
 
 
+# Create a string made of the first, middle, and last character:
 
-
+string = input("Enter the string: ")
+first = string[0]
+for i in range(len(string)):
+     if i%2==0:
+          print(string[i],end="")
+          i=i+1
+     
+# Create a string made of the middle three characters
+string = input("Enter the string: ")
 
