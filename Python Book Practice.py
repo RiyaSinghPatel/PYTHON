@@ -268,6 +268,22 @@ for i in range(len(string)):
           print(string[i],end="")
           i=i+1
      
-# Create a string made of the middle three characters
-string = input("Enter the string: ")
+#  Pattern
+# enter the rows:5
+# 1
+# 22
+# 333
+# 4444
+# 55555
+n=int(input("enter the rows:"))
+i=1
+while i<=n:
+    j=1
+    while j<=i:
+        print(i, end="")
+        j=j+1
+    i=i+1
+    print()
 
+
+    
